@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Trendy Stores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-gray-100 py-4 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Trendy Stores</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="../index.html" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                    <li><a href="../products/prod2.html" class="text-gray-700 hover:text-blue-500">Products</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-blue-500">About Us</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-blue-500">Contact</a></li>
+                    <li><a href="blog.html" class="text-gray-700 hover:text-blue-500">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section class="about py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8">About Us</h2>
+                <p class="text-lg mb-4">Welcome to Trendy Stores, your one-stop shop for the latest and greatest gadgets! We're passionate about finding unique, innovative products that make life more exciting and convenient.</p>
+                <p class="text-lg mb-4">Our mission is to bring you a curated selection of high-quality gadgets that you won't find in your typical retail stores. We carefully source each item to ensure it meets our standards for quality, innovation, and value.</p>
+                <p class="text-lg mb-4">We believe that shopping should be an enjoyable experience. That's why we're dedicated to providing excellent customer service, fast shipping, and a hassle-free return policy. We're always here to answer your questions and help you find the perfect gadget.</p>
+                <p class="text-lg">Thank you for visiting our store. We hope you find something you love!</p>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team bg-gray-100 py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8 animate-fade-in">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="p-6 border border-gray-300 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300">
+                        <img src="../images/boss.gif" alt="Anne W" class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold">Anne W</h3>
+                        <p class="text-gray-700">Founder & CEO</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="p-6 border border-gray-300 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300">
+                        <img src="../images/manager.jpeg" alt="Product Manager" class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold">_Mwas</h3>
+                        <p class="text-gray-700">Product Manager</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="p-6 border border-gray-300 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300">
+                        <img src="../images/support.jpeg" alt="Alex Brown" class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold">_Support</h3>
+                        <p class="text-gray-700">Customer Support Lead</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center animate-fade-in">Our Journey</h2>
+                <div class="space-y-8">
+                    <div class="flex items-center animate-slide-in-left">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center">2020</div>
+                        <p class="ml-4 text-lg">Founded with the mission to bring unique gadgets to customers worldwide.</p>
+                    </div>
+                    <div class="flex items-center animate-slide-in-right">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center">2021</div>
+                        <p class="ml-4 text-lg">Reached 10,000+ happy customers and expanded our product catalog.</p>
+                    </div>
+                    <div class="flex items-center animate-slide-in-left">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center">2025</div>
+                        <p class="ml-4 text-lg">Launched our new website with improved features and faster shipping.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq bg-gray-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center animate-fade-in">Frequently Asked Questions</h2>
+                <div class="space-y-4">
+                    <div class="border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-200 transition duration-300" onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-semibold">What is your return policy?</h3>
+                        <p class="text-gray-700 mt-2 hidden">We offer a hassle-free 30-day return policy for all our products.</p>
+                    </div>
+                    <div class="border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-200 transition duration-300" onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-semibold">How long does shipping take?</h3>
+                        <p class="text-gray-700 mt-2 hidden">Shipping typically takes 5-10 business days, depending on your location.</p>
+                    </div>
+                    <div class="border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-200 transition duration-300" onclick="toggleFaq(this)">
+                        <h3 class="text-lg font-semibold">Do you ship internationally?</h3>
+                        <p class="text-gray-700 mt-2 hidden">Yes, we ship to most countries worldwide. Shipping rates may vary.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Buttons -->
+        <section class="cta py-16 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4">Ready to Explore?</h2>
+                <p class="text-lg mb-8">Discover our unique collection of gadgets and find something you love.</p>
+                <a href="products/prod2.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Interactive Stats Section -->
+        <section class="stats py-16 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8">Our Achievements</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-4xl font-bold text-blue-500">10,000+</h3>
+                        <p class="text-gray-700">Happy Customers</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold text-blue-500">50+</h3>
+                        <p class="text-gray-700">Countries Shipped To</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold text-blue-500">500+</</h3>
+                        <p class="text-gray-700">Products Sold</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Shortcut -->
+        <section class="contact-shortcut py-16 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4">Need Assistance?</h2>
+                <p class="text-lg mb-8">Our team is here to help. Feel free to reach out to us anytime.</p>
+                <a href="contact.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Button -->
+    <div class="fixed bottom-4 right-4">
+        <a href="contact.html" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-full shadow-lg">
+            <i class="fas fa-envelope"></i> Contact Us
+        </a>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Trendy Stores</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle FAQ visibility
+        function toggleFaq(element) {
+            const answer = element.querySelector('p');
+            answer.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
